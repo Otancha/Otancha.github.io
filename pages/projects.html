@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects — Moca.space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav__brand" href="../index.html">
+                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo">
+            </a>
+            <button class="nav__toggle" id="hamburger" aria-expanded="false" aria-controls="primary-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav__menu" id="primary-menu">
+                <ul class="nav__links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a class="is-active" href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="nav__search" type="button" data-search-toggle>
+                    <span class="sr-only">Open site search</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light or dark mode"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="work-page">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="section-tag">Our Work</span>
+                <h1>The screen is your stage.</h1>
+                <p class="work-subtitle">"A flawless user experience is the ultimate statement of professionalism." We deliver seamless, high-performance digital pathways.</p>
+            </div>
+
+            <div class="work-section">
+                <div class="work-image reveal-up">
+                    <img src="../assets/images/สมาชิก/MCSM-NineA.png" alt="Graphic hero" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-NineA.png">
+                </div>
+                <div class="work-content reveal-left">
+                    <h2>Graphic</h2>
+                    <p>Our artists create bespoke imagery and graphics, transforming your campaigns into visual masterpieces.</p>
+                    <div class="work-tags">
+                        <span>Web Development</span>
+                        <span>Strategy</span>
+                        <span>Design Services</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-divider"></div>
+
+            <div class="work-row-2">
+                <div class="work-col">
+                    <div class="work-section reverse">
+                        <div class="work-image-small reveal-up">
+                            <img src="../assets/images/สมาชิก/MCSM-all2.JPG" alt="Photography" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-all2.JPG">
+                        </div>
+                        <div class="work-content reveal-left">
+                            <h2>Photography</h2>
+                            <p>The Campaign Lens: high-end editorial photography that captures emotion and luxury.</p>
+                            <div class="work-tags">
+                                <span>Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <div class="work-section">
+                        <div class="work-image-small reveal-up">
+                            <img src="../assets/images/สมาชิก/MCSM-all3.png" alt="Drawing" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-all3.png">
+                        </div>
+                        <div class="work-content reveal-left">
+                            <h2>Drawing</h2>
+                            <p>Visual storytelling through art. Original drawings that resonate deeply with your audience.</p>
+                            <div class="work-tags">
+                                <span>Design Services</span>
+                                <span>Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-divider"></div>
+
+            <div class="work-section">
+                <div class="work-image reveal-up">
+                    <img src="../assets/images/สมาชิก/MCSM-GameA.png" alt="Web and app" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-GameA.png">
+                </div>
+                <div class="work-content reveal-left">
+                    <h2>Web / App</h2>
+                    <p>We engineer seamless, high-performance web experiences—the elegant, frictionless platform your customers deserve.</p>
+                    <div class="work-tags">
+                        <span>Web Development</span>
+                        <span>Design Services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+        <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+            <div class="search-overlay__header">
+                <h3 id="searchTitle">Search the site</h3>
+                <button class="search-overlay__close" type="button" data-search-toggle aria-label="Close search">&times;</button>
+            </div>
+                <div class="search-overlay__body">
+                <label for="searchInput">What are you looking for?</label>
+                <input id="searchInput" type="search" placeholder="Type keywords e.g. projects, team, contact" autocomplete="off">
+                <ul class="search-overlay__results" id="searchResults" role="listbox"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo">
+                <p>Capture attention in milliseconds. We deliver seamless, high-performance digital experiences.</p>
+            </div>
+            <div>
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay in the loop</h4>
+                <form class="subscribe" action="#" method="post">
+                    <label class="sr-only" for="projects-email">Email</label>
+                    <input type="email" id="projects-email" name="email" placeholder="email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer__meta">
+                    <p>Email us: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+                    <p>Call us: <a href="tel:+660123456789">+66 012 345 6789</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>@ Moca.space</p>
+            <div class="footer__dots"><span></span><span></span></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

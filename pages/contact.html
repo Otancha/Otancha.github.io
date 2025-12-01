@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact — Moca.space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav__brand" href="../index.html">
+                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo">
+            </a>
+            <button class="nav__toggle" id="hamburger" aria-expanded="false" aria-controls="primary-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav__menu" id="primary-menu">
+                <ul class="nav__links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a class="is-active" href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+                <button class="nav__search" type="button" data-search-toggle>
+                    <span class="sr-only">Open site search</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light or dark mode"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h1>CONTACT US</h1>
+                <p>Let’s build what’s next together.</p>
+                <p>Drop a note, share a brief, or say hi. We reply within one business day.</p>
+            </div>
+            <div class="contact__layout">
+                <div class="contact__form-card reveal-left">
+                    <form class="contact-form" action="#" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0X-XXX-XXXX" required>
+
+                        <label for="line">Line ID</label>
+                        <input type="text" id="line" name="line" placeholder="@mocastudio">
+
+                        <label for="details">Project details</label>
+                        <textarea id="details" name="details" rows="4" placeholder="Tell us about the project"></textarea>
+
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact__info reveal-up">
+                    <ul>
+                        <li><strong>Company</strong> Moca.space Studio</li>
+                        <li><strong>Location</strong> Bangkok, Thailand</li>
+                        <li><strong>Phone</strong> +66 123 456 789</li>
+                        <li><strong>Email</strong> hello@moca.space</li>
+                        <li><strong>Hours</strong> Monday — Friday / 8:00 AM - 6:00 PM</li>
+                    </ul>
+                    <div class="qr-card">
+                        <img src="../assets/images/contact-qr.svg" alt="Line QR code" loading="lazy">
+                        <p>Scan to chat on Line</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-hero reveal-scale">
+                <img src="../assets/images/สมาชิก/MCSM-all1.JPG" alt="Studio showcase" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-all1.JPG">
+            </div>
+        </div>
+    </main>
+
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+        <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+            <div class="search-overlay__header">
+                <h3 id="searchTitle">Search the site</h3>
+                <button class="search-overlay__close" type="button" data-search-toggle aria-label="Close search">&times;</button>
+            </div>
+            <div class="search-overlay__body">
+                <label for="searchInput">What are you looking for?</label>
+                <input id="searchInput" type="search" placeholder="Type keywords e.g. projects, team, contact" autocomplete="off">
+                <ul class="search-overlay__results" id="searchResults" role="listbox"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo">
+                <p>Capture attention in milliseconds. We deliver seamless, high-performance digital experiences.</p>
+            </div>
+            <div>
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay in the loop</h4>
+                <form class="subscribe" action="#" method="post">
+                    <label class="sr-only" for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer__meta">
+                    <p>Email us: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+                    <p>Call us: <a href="tel:+660123456789">+66 012 345 6789</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>@ Moca.space</p>
+            <div class="footer__dots"><span></span><span></span></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
