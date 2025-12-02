@@ -246,8 +246,10 @@ searchInput?.addEventListener('input', evt => {
     const btn = document.getElementById('themeToggle');
     const root = document.documentElement;
     const brandImg = document.querySelector('.nav__brand img');
-    const apply = (theme) => {
+    const apply = (nextTheme) => {
+        const theme = nextTheme === 'dark' ? 'dark' : 'light';
         root.setAttribute('data-theme', theme);
+        root.style.colorScheme = theme;
         if (btn) btn.setAttribute('aria-pressed', String(theme === 'dark'));
         if (brandImg) {
             const prefix = typeof getRootPrefix === 'function' ? getRootPrefix() : '';
@@ -259,8 +261,9 @@ searchInput?.addEventListener('input', evt => {
         localStorage.setItem('theme', theme);
     };
 
-    const stored = localStorage.getItem('theme') || 'light';
-    apply(stored);
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const stored = localStorage.getItem('theme');
+    apply(stored || (prefersDark ? 'dark' : 'light'));
 
     btn?.addEventListener('click', () => {
         const current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';

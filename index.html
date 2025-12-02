@@ -5,6 +5,19 @@
     <title>Moca.space — Creative Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function bootTheme(){
+            try {
+                const stored = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const theme = stored || (prefersDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+                document.documentElement.style.colorScheme = theme === 'dark' ? 'dark' : 'light';
+            } catch (err) {
+                console.warn('Theme boot failed', err);
+            }
+        })();
+    </script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
