@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>Contact — Moca.space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../css/main.css" as="style">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="nav" aria-label="Primary">
             <a class="nav__brand" href="../index.html">
-                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo">
+                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo" decoding="async">
             </a>
             <button class="nav__toggle" id="hamburger" aria-expanded="false" aria-controls="primary-menu">
                 <span></span><span></span><span></span>
@@ -68,14 +71,14 @@
                         <li><strong>Hours</strong> Monday — Friday / 8:00 AM - 6:00 PM</li>
                     </ul>
                     <div class="qr-card">
-                        <img src="../assets/images/contact-qr.svg" alt="Line QR code" loading="lazy">
+                        <img src="../assets/images/contact-qr.svg" alt="Line QR code" loading="lazy" decoding="async">
                         <p>Scan to chat on Line</p>
                     </div>
                 </div>
             </div>
 
             <div class="contact-hero reveal-scale">
-                <img src="../assets/images/สมาชิก/MCSM-all1.JPG" alt="Studio showcase" loading="lazy" data-lightbox="../assets/images/สมาชิก/MCSM-all1.JPG">
+                <img src="../assets/images/สมาชิก/MCSM-all1.JPG" alt="Studio showcase" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/MCSM-all1.JPG">
             </div>
         </div>
     </main>
@@ -97,7 +100,7 @@
     <footer class="footer">
         <div class="container footer__grid">
             <div>
-                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo">
+                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo" loading="lazy" decoding="async">
                 <p>Capture attention in milliseconds. We deliver seamless, high-performance digital experiences.</p>
             </div>
             <div>
@@ -128,6 +131,6 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>

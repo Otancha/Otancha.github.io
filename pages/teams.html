@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>Teams — Moca.space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../css/main.css" as="style">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="nav" aria-label="Primary">
             <a class="nav__brand" href="../index.html">
-                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo">
+                <img src="../assets/images/logo/mocalogoW1.png" alt="Moca.space logo" decoding="async">
             </a>
             <button class="nav__toggle" id="hamburger" aria-expanded="false" aria-controls="primary-menu">
                 <span></span><span></span><span></span>
@@ -47,35 +50,35 @@
 
             <div class="team-circles">
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member1.png" alt="Team member 1" loading="lazy" data-lightbox="../assets/images/สมาชิก/member1.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member1.png" alt="Team member 1" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member1.png"></div>
                     <p>Tanchanok Tamsakul</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member2.png" alt="Team member 2" loading="lazy" data-lightbox="../assets/images/สมาชิก/member2.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member2.png" alt="Team member 2" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member2.png"></div>
                     <p>Chutima Jiramongkol</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member3.png" alt="Team member 3" loading="lazy" data-lightbox="../assets/images/สมาชิก/member3.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member3.png" alt="Team member 3" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member3.png"></div>
                     <p>Watsida Amorngijwanit</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member4.png" alt="Team member 4" loading="lazy" data-lightbox="../assets/images/สมาชิก/member4.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member4.png" alt="Team member 4" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member4.png"></div>
                     <p>Krittmet Changkaew</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member5.png" alt="Team member 5" loading="lazy" data-lightbox="../assets/images/สมาชิก/member5.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member5.png" alt="Team member 5" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member5.png"></div>
                     <p>Peerapat raraiwan</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member6.png" alt="Team member 6" loading="lazy" data-lightbox="../assets/images/สมาชิก/member6.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member6.png" alt="Team member 6" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member6.png"></div>
                     <p>Pratiphan Chuenarom</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member7.png" alt="Team member 7" loading="lazy" data-lightbox="../assets/images/สมาชิก/member7.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member7.png" alt="Team member 7" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member7.png"></div>
                     <p>Tharitsanu Rasrisuay</p>
                 </div>
                 <div class="team-circle-item">
-                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member8.png" alt="Team member 8" loading="lazy" data-lightbox="../assets/images/สมาชิก/member8.png"></div>
+                    <div class="circle-img reveal-up"><img src="../assets/images/สมาชิก/member8.png" alt="Team member 8" loading="lazy" decoding="async" data-lightbox="../assets/images/สมาชิก/member8.png"></div>
                     <p>Jeerawat Thongonthunyanij</p>
                 </div>
             </div>
@@ -120,7 +123,7 @@
     <footer class="footer">
         <div class="container footer__grid">
             <div>
-                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo">
+                <img src="../assets/images/logo/mocalogoW2.png" alt="Moca.space white logo" class="footer__logo" loading="lazy" decoding="async">
                 <p>Capture attention in milliseconds. We deliver seamless, high-performance digital experiences.</p>
             </div>
             <div>
@@ -151,6 +154,6 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>
