@@ -14,7 +14,7 @@
     --radius: 18px;
     --shadow: 0 30px 60px rgba(0,0,0,0.18);
     --header-bg: rgba(255,255,255,0.7);
-    --hero-bg: url('../assets/images/bg/whiteBG.jpeg') center/cover;
+    --hero-bg: url('../assets/images/bg/whiteBG.webp') center/cover;
     --hero-overlay: none; /* remove dark filter in light theme */
 }
 
@@ -30,7 +30,7 @@
     --border: rgba(0, 0, 0, 0.15);
     --shadow: 0 30px 60px rgba(0,0,0,0.35);
     --header-bg: rgba(5,5,5,0.75);
-    --hero-bg: radial-gradient(circle at top right, rgba(255,100,170,0.25), transparent 45%), url('../assets/images/bg/darkBG.jpeg') center/cover;
+    --hero-bg: radial-gradient(circle at top right, rgba(255,100,170,0.25), transparent 45%), url('../assets/images/bg/darkBG.webp') center/cover;
     --hero-overlay: linear-gradient(180deg, rgba(5,5,5,0.75), var(--bg));
 }
 

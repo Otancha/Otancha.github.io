@@ -254,8 +254,8 @@ searchInput?.addEventListener('input', evt => {
         if (brandImg) {
             const prefix = typeof getRootPrefix === 'function' ? getRootPrefix() : '';
             brandImg.src = theme === 'dark'
-                ? `${prefix}assets/images/logo/mocalogoW1.png`
-                : `${prefix}assets/images/logo/mocalogoB2.png`;
+                ? `${prefix}assets/images/logo/mocalogoW1.webp`
+                : `${prefix}assets/images/logo/mocalogoB2.webp`;
             brandImg.alt = 'Moca.space logo';
         }
         localStorage.setItem('theme', theme);
